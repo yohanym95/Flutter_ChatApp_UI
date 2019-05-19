@@ -35,7 +35,7 @@ class _MyHomePageState extends State<MyHomePage> {
         length: 3,
         child: Scaffold(
           appBar: AppBar(
-            title: Text('WhatsApp'),
+            title: Text('Chat App'),
             actions: <Widget>[
               IconButton(
                 icon: Icon(Icons.search),
@@ -91,7 +91,6 @@ class _MyHomePageState extends State<MyHomePage> {
               getCallList(),
             ],
           ),
-          //  floatingActionButton: getStatusFloatingButton(),
         ),
       ),
     );
@@ -274,17 +273,6 @@ class _MyHomePageState extends State<MyHomePage> {
     return callList;
   }
 
-  Widget getStatusFloatingButton() {
-    var floatButton = FloatingActionButton(
-      onPressed: () {
-        debugPrint('FAB Clicked');
-      },
-      child: Icon(Icons.camera_alt),
-      tooltip: 'Add one more item',
-    );
-
-    return floatButton;
-  }
 
   void showSnackBar(BuildContext context, popUp result){
     var snackBar = SnackBar(
