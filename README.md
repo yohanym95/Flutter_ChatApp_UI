@@ -1,6 +1,6 @@
-# whatsapp_clone
+# Chat App UI
 
-A new Flutter project.
+This is UI for chat app and this is similar to whatsapp. 
 
 ## Getting Started
 
